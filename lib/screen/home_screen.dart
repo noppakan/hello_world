@@ -30,12 +30,21 @@ class MyApp extends StatelessWidget {
               ),
               ),
               body: Center(
-                child: Container(
-                  width: 1000,
-                  height: 1500,
-                  color: Colors.blue[800],
-                  child: Image.asset('assets/images/drogba.jpg'),
-                  ),
+                child: Column(
+                  children: [
+                    Container(
+                      color: Colors.blue[800],
+                      child: Text("Didier Drogba")),
+                      
+                      Text("Chelsea no.11"),
+                    Container(
+                      width: 150,
+                      height: 150,
+                      color: Colors.blue[800],
+                      child: Image.asset('assets/images/drogba.jpg'),
+                      ),
+                  ],
+                ),
               ),
             ),
          );
