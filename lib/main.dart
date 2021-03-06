@@ -1,35 +1,17 @@
 import 'package:flutter/material.dart';
+import 'package:hello_world/screen/home_screen.dart';
 
-void main() {
-  runApp(
-    MaterialApp(
-      home: Scaffold(
-        drawer: Drawer(
-          child: Text("hello drawer"),
-          ),
-        appBar: AppBar(
-          title: Text("My First project"),
-        ),
-        body: Center(
-          child: Text("hello world"),
-        ),
-        bottomNavigationBar: BottomNavigationBar(
-          items: [
-          BottomNavigationBarItem(
-            icon: Icon(Icons.home),
-            label: "home"
-            ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.phone),
-            label: "phone"          
-            ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.dashboard_customize),
-            label: "dashboard"
-          ),
-        ],
-        ),
-      ),
-    ),
-  );
+void main(){
+  runApp(MyApp());
 }
+
+class MyApp extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      home: HomeScreen(),
+          );
+        }
+      }
+      
+   
