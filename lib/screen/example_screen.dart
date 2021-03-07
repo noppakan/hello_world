@@ -71,7 +71,7 @@ class _ExampleScreenState extends State<ExampleScreen> {
                        height:150,
                        color: Colors.pink[500],
                        child: Column(
-                          crossAxisAlignment: CrossAxisAlignment.center,
+                         crossAxisAlignment: CrossAxisAlignment.center,
                          mainAxisAlignment: MainAxisAlignment.center,
                          children: [
                            Text("เติ้ล เกย์"),
@@ -84,7 +84,6 @@ class _ExampleScreenState extends State<ExampleScreen> {
                          ],
                        )
                      ),
-                     
                    ],
                  ),
                ),
